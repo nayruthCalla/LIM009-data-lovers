@@ -1,0 +1,22 @@
+*{
+text-align: center;
+background-color:rgba(106, 182, 55, 0.521);
+
+}
+.color-main{
+    
+    background: rgba(16, 17, 16, 0.534);
+    color: white;
+    font-size: 100%;
+    display: inline;
+    margin-left: 5%;
+    padding: 3%;
+    
+}
+a{
+    color: aliceblue;
+    
+}
+h1{
+    margin-top: 5%;
+}
