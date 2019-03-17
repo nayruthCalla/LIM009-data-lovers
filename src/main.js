@@ -1,7 +1,7 @@
 /* Manejo del DOM */
 const showPoke = (dataPoke) => {
     return `
-	<div class="pokeEst">
+	<div class="pokeBox">
 	<img class="img" src="${dataPoke.img}"></img>
 	<h2>${dataPoke.name}</h2>
 	</div>
