@@ -8,20 +8,60 @@
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 </head>
 
-<body>
+<body id="cont-main">
   <div id="root"></div>
-  <header class="color-main">
-    <nav class="color-main">
-      <ul class="color-main">
-        <li class="color-main"><a href="">home</a></li>
-        <li class="color-main"><a href="">POKEMONES</a></li>
-        <li class="color-main"><a href="">TIPO POKEMON</a></li>
+  <header>
+    <nav class="menu">
+      <ul class="sub-menu">
+        <li class="sub-menu"><a href="">POKEPEDIA</a></li>
+        <!-- <li class="sub-menu"><a href="">POKEMONES</a></li>
+        <li class="sub-menu"><a href="">TIPO POKEMON</a></li> -->
       </ul>
     </nav>
+
+    <div class="slider">
+      <ul>
+        <li>
+          <img src="image/slide-main1.jpg" alt="">
+        </li>
+        <li>
+          <img src="image/slide-a.jpg" alt="">
+        </li>
+        <li>
+          <img src="image/slide-c.jpg" alt="">
+        </li>
+        <li>
+          <img src="image/slide-b.jpg" alt="">
+        </li>
+
+      </ul>
+
+
+    </div>
+    <nav class="menu">
+      <ul class="sub-menu">
+        <li class="sub-menu"><a href="">FILTRA</a></li>
+        <li class="sub-menu">
+          <!-- <select id="selectOrder">
+            <option value="a-z" selected>a-z</option>
+            <option value="z-a">z-a</option>
+          </select></li> -->
+          <button id="btn-order">ordenar</button>
+        <li class="sub-menu"><a href="">ESTADISTICA</a></li>
+      </ul>
+    </nav>
+
   </header>
-  <main id="cont-main">
+  <main>
+    <section id="cont-data"></section>
+    <section>
+      <h1>Estos son los nombres del pokemon</h1>
+
+      <section id="cont-order"></section>
+    </section>
 
   </main>
+
   <!-- <script src="./data/injuries/injuries.js"></script> -->
   <script src="./data/pokemon/pokemon.js"></script>
   <!-- <script src="./data/steam/steam.js"></script> -->
@@ -29,6 +69,7 @@
   <!-- <script src="./data/lol/lol.js"></script> -->
   <script src="data.js"></script>
   <script src="main.js"></script>
+
 </body>
 
 </html>
