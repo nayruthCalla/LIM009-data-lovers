@@ -8,6 +8,7 @@ const showPoke = (dataPoke) => {
 	`
 }
 
+<<<<<<< HEAD
 document.getElementById('cont-data').innerHTML = ` <h3>Estos son los nombres del pokemon</h3>
 <div id="poke">  </div>
 ${POKEMON.pokemon.map(showPoke).join(' ')}`
@@ -36,3 +37,16 @@ idBtn.addEventListener('click', e => {
 		namesPoke.forEach(viewData);
 	}
 });
+=======
+document.getElementById('cont-main').innerHTML =
+ ` <div class ="pokeview">  <h1>Estos son todos los pokemones</h1>
+
+${POKEMON.pokemon.map(showPoke).join(' ')}
+
+</div>`
+// //Filtrado
+// document.getElementById('cont-main').innerHTML =
+// ` POKEMON.pokemon.filter(pokemon => pokemon.type="Agua") ;
+// `
+ 
+>>>>>>> 053cf1ff39aa5cab042656334ae28dcb28a6c7f9
