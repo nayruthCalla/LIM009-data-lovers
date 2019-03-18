@@ -8,6 +8,14 @@ const showPoke = (dataPoke) => {
 	`
 }
 
-document.getElementById('cont-main').innerHTML = ` <h1>Estos son los nombres del pokemon</h1>
-<div id="poke">  </div>
-${POKEMON.pokemon.map(showPoke).join(' ')}`
+document.getElementById('cont-main').innerHTML =
+ ` <div class ="pokeview">  <h1>Estos son todos los pokemones</h1>
+
+${POKEMON.pokemon.map(showPoke).join(' ')}
+
+</div>`
+// //Filtrado
+// document.getElementById('cont-main').innerHTML =
+// ` POKEMON.pokemon.filter(pokemon => pokemon.type="Agua") ;
+// `
+ 
