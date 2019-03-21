@@ -1,15 +1,17 @@
 /* Manejo del DOM */
-const valuesObjet = Object.values(POKEMON.pokemon); //obeteniendo data en un array de todo el objeto POKEMON
+const valuesObjet = POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
 const showData = (view) => {
-	document.getElementById('cont-data').innerHTML += `
+	document.getElementById('cont-data').innerHTML += 
+	`
 	<object class='style-mold'>
 	<img src='${view.img}'/>
-	<param name='${view.name}' value='${view.id}'/>${view.name}
+	<param />${view.name}
 	</object>
-	`
+	` 
 }
 valuesObjet.forEach(showData);
 
+//filtrando por tipo
 
 
 

@@ -11,3 +11,8 @@ const sortData = (data, sortBy, sortOrder) => //funcion ordenar
     return data;
 }
 window.sortData = sortData;
+
+const filter=(arrDat, condition)=>{
+
+    
+}
