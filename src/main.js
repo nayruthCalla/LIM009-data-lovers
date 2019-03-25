@@ -5,10 +5,13 @@ const showData = view => {
   document.getElementById("cont-data").innerHTML = "";
   view.forEach(element => {
     valuesData = `
-		<object class='style-mold'>
-		<img src='${element.img}'/>
-		<param />${element.name}
-		</object>
+    
+      <div class="row cuatro-columnas"
+        <div class="col-xs-12 col-sm-6 col-ml-3">
+          <img src='${element.img}'/>
+          <param />${element.name}
+           </div>
+	      	</object>
 		`;
     document.getElementById("cont-data").innerHTML += `${valuesData}`;
   });
