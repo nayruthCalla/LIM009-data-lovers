@@ -67,6 +67,7 @@ html {
     width: 25%;
     float: right;
     height:30em; /*por borrar*/
+    border-radius: 15px;  
     margin-right: 3%;
     padding: .5rem;
     padding-left: .5rem;

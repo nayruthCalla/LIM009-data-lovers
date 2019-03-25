@@ -31,3 +31,17 @@ idBtn.addEventListener("click", e => {
     showData(namesPoke);
   }
 });
+
+//filtrado
+const condition = document.getElementById("btn_filter").value;
+let namesPoke = filter(condition,valuesObjet);
+
+  
+  btn_filter.addEventListener("click", e => {
+    
+  
+    if (e.target.id === "btn_filter") {
+     
+      showData(namesPoke);
+    }
+  });

@@ -12,7 +12,10 @@ const sortData = (data, sortBy, sortOrder) => //funcion ordenar
 }
 window.sortData = sortData;
 
-const filter=(arrDat, condition)=>{
+const filter=(condition,data)=>{
 
-    
-}
+    const namesFilterByTypes =valuesObjet.filter(ele=> ele.type[0] === condition || ele.type[1] === condition)
+        return namesFilterByTypes;    
+              }
+        
+    window.filter = filter;  
