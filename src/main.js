@@ -9,7 +9,7 @@ const showData = view => {
       <div class="row cuatro-columnas"
         <div class="col-xs-12 col-sm-6 col-ml-3">
           <img src='${element.img}'/>
-          <param />${element.name}
+          <h2 class="namePoke"/>${element.name} </h2>
            </div>
 	      	</object>
 		`;

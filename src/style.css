@@ -21,7 +21,7 @@ html {
     
     background: rgba(52, 224, 121, 0.17);
     /* Green 3 */
-    border: 3px solid #6FCF97;
+    border: 3px solid #34E079;
     box-sizing: border-box;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 10px;
@@ -41,9 +41,14 @@ html {
     float: left;
    
    }
+   .namePoke{
+    background: #C4C4C4;
+    border-radius: 7px;
+
+   }
   .grid {
     min-height: 100%;
-    background: rgba(52, 224, 121, 0.17);
+    background: rgba(0, 0, 0, 0.27);
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(150px, 10fr));
     grid-gap: 1%;    
@@ -53,12 +58,12 @@ html {
   .grid > * { 
     padding:2%;
     text-align: center;
-    background-color: steelblue;
+    background-color: rgba(12, 12, 12, 0.7);;
     border-radius: 15px;
     
   }
   aside{
-    background: rgb(238, 188, 130);
+    background: rgba(0, 0, 0, 0.27);;
     width: 25%;
     float: right;
     height:30em; /*por borrar*/
@@ -66,6 +71,17 @@ html {
     padding: .5rem;
     padding-left: .5rem;
     
+}
+
+.btn_filter{
+    position: absolute;
+width: 300px;
+height: 44px;
+top: 439px;
+    background: #F2F2F2;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 74px;
+
 }
 .space-left{
     float: left;
