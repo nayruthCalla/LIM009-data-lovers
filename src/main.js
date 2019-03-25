@@ -63,3 +63,11 @@ idBtnOrder.addEventListener("change", () => {
   );
   showData(orderDataPoke);
 });
+
+//Imprimiendo stata en secttion stata de html
+document.getElementById("stata").innerHTML = "";
+document.getElementById("stata").innerHTML += `
+
+<h1>HOLA MUNDO</h1>
+<h4> Sabias q el peso promedio es 
+${computeStats(valuesObjet)} </h4>`;
