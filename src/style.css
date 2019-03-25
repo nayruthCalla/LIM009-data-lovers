@@ -1,115 +1,124 @@
 html {
-    box-sizing: border-box;
-    font-family: sans-serif;
-    font-size: 16px;
-    height: 100%;
-   
-  }
-  body{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-       
-    background: url(fondo.png);
-  }
-  .cont-data{
-    position: absolute;
-    width: 935px;
-    height: 589px;
-    left: calc(50% - 935px/2 - 212.5px);
-    top: calc(50% - 589px/2 + 109.5px);
-    
-    background: rgba(52, 224, 121, 0.17);
-    /* Green 3 */
-    border: 3px solid #6FCF97;
-    box-sizing: border-box;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 10px;
-  }
-  *,
-  *:after,
-  *:before { 
-   padding: 0;
-   margin: 0;
-   box-sizing: inherit;
-  }
-  [class*= "col-"]{
-
-    /* margin: 2%; */
-    padding:5px;
-    box-sizing: border-box;
-    float: left;
-   
-   }
-  .grid {
-    min-height: 100%;
-    background: rgba(52, 224, 121, 0.17);
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 10fr));
-    grid-gap: 1%;    
-    border-radius: 15px;   
-    padding: 2%;
-  }
-  .grid > * { 
-    padding:2%;
-    text-align: center;
-    background-color: steelblue;
-    border-radius: 15px;
-    
-  }
-  aside{
-    background: rgb(238, 188, 130);
-    width: 25%;
-    float: right;
-    height:30em; /*por borrar*/
-    margin-right: 3%;
-    padding: .5rem;
-    padding-left: .5rem;
-    
+  box-sizing: border-box;
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
 }
-.space-left{
-    float: left;
-   }
-.size-cont{
-    width: 50rem;
-    overflow-block: hidden;
-    margin-left: 3%;
-    height:30em;   
-       }
-       article{
-        width: 100%;
-       }
-
-
-.scroll{
-    overflow:scroll; 
-    overflow-y:scroll;
-    overflow-x:hidden;
+body {
+  /* position: absolute;
+  width: 100%;
+  height: 100%; */
+  background: url(fondo.png);
+  background-position: no-repeat;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #1a1b1bf3;
+  background-size: cover;
+  border-image-width: 50%;
 }
+.color-font {
+  background-color: rgba(255, 255, 255, 0.685);
+  border-radius: 15%;
+  /* color: white; */
+}
+.cont-data {
+  position: absolute;
+  width: 935px;
+  height: 589px;
+  left: calc(50% - 935px / 2 - 212.5px);
+  top: calc(50% - 589px / 2 + 109.5px);
 
-.head{
-width: 50%;
-
-
+  /* Green 3 */
+  border: 3px solid #6fcf97;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.616);
+  border-radius: 10px;
+}
+*,
+*:after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+[class*="col-"] {
+  /* margin: 2%; */
+  padding: 5px;
+  box-sizing: border-box;
+  float: left;
+}
+.grid {
+  min-height: 100%;
+  box-shadow: 0px 4px 4px rgba(202, 235, 17, 0.473);
+  background: #81c7276b;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 10fr));
+  grid-gap: 1%;
+  border-radius: 15px;
+  padding: 5%;
+}
+.grid > * {
+  padding: 2%;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.733);
+  border-radius: 15px;
+}
+aside {
+  background: #6fcf7783;
+  box-shadow: 0px 4px 4px rgba(202, 235, 17, 0.473);
+  width: 25%;
+  float: right;
+  height: 30em; /*por borrar*/
+  margin-right: 3%;
+  padding: 0.5rem;
+  padding-left: 0.5rem;
+}
+.space-left {
+  float: left;
+}
+.size-cont {
+  width: 50rem;
+  overflow-block: hidden;
+  margin-left: 3%;
+  height: 30em;
+}
+article {
+  width: 100%;
 }
 
-footer{
-    overflow: hidden;
-    height: 10px;
-    background: black;
-}
-.col-xs-12{
-    width: 100%;
- }
- .col-sm-6{
-     width: 50%;
- }
-.col-ml-3{
-    width: 25%
+.scroll {
+  overflow: scroll;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
+.head {
+  width: 30%;
+}
 
-
+footer {
+  overflow: hidden;
+  height: 10px;
+  /* background: black; */
+}
+.col-xs-12 {
+  width: 100%;
+}
+.col-sm-6 {
+  width: 50%;
+}
+.col-ml-3 {
+  width: 25%;
+}
+.style-btn {
+  width: 70%;
+  padding: 2%;
+  border-radius: 20%;
+  font-size: 17px;
+  margin: 10%;
+  color: black;
+}
 
 /* *{
 text-align: center;}
@@ -256,5 +265,5 @@ header{
     background-repeat: no-repeat;
     background-position: center;
     background-color: #1a1b1bf3; */
-    /* background-size: 60%; */
+/* background-size: 60%; */
 /* } */
