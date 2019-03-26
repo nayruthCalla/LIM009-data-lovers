@@ -19,7 +19,7 @@ body {
 }
 .color-font {
   background-color: rgba(255, 255, 255, 0.685);
-  border-radius: 15%;
+  border-radius: 15px;
   /* color: white; */
 }
 .cont-data {
@@ -33,7 +33,7 @@ body {
   border: 3px solid #6fcf97;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.616);
-  border-radius: 10px;
+  border-radius: 15px;
 }
 *,
 *:after,
@@ -114,10 +114,18 @@ footer {
 .style-btn {
   width: 70%;
   padding: 2%;
-  border-radius: 20%;
+  border-radius: 15px;
   font-size: 17px;
   margin: 10%;
   color: black;
+}
+.stata-style{
+  width: 70%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10%;
 }
 
 /* *{

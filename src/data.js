@@ -27,6 +27,6 @@ const computeStats=(data)=>{
     let arr=parseFloat(data_w[i].split(" ",1));
    newi = newi + arr;
     };
-    return newi/data.length;
+    return parseInt(newi/data.length);
    }
        
