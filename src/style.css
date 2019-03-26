@@ -30,10 +30,11 @@ body {
   top: calc(50% - 589px / 2 + 109.5px);
 
   /* Green 3 */
+  
   border: 3px solid #6fcf97;
   box-sizing: border-box;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.363);
-  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.616);
+  border-radius: 15px;
 }
 *,
 *:after,
@@ -118,6 +119,14 @@ footer {
   font-size: 17px;
   margin: 10%;
   color: black;
+}
+.stata-style{
+  width: 70%;
+  padding: 2%;
+  background-color: white;
+  border-radius: 15px;
+  text-align: center;
+  margin: 10%;
 }
 
 /* *{

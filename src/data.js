@@ -18,3 +18,15 @@ const filter = (arrDat, condition) => {
   );
   return filterType;
 };
+/////FUNCTION STATA PESO PROMEDIO
+const computeStats=(data)=>{
+  
+    let data_w= data.map(el=>el.weight);
+    let newi=0;
+    for(let i=0;i<data_w.length;i++){
+    let arr=parseFloat(data_w[i].split(" ",1));
+   newi = newi + arr;
+    };
+    return parseInt(newi/data.length);
+   }
+       

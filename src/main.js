@@ -56,3 +56,11 @@ idBtnOrder.addEventListener("change", () => {
     sortData(valuesObjet, "name", document.getElementById("btn-order").value)
   );
 });
+
+//Imprimiendo stata en secttion stata de html
+// document.getElementById("stata").innerHTML = "";
+document.getElementById("stata").innerHTML += `
+
+
+<h4> ¿Sabias que el peso promedio de estos Pokémones es 
+${computeStats(valuesObjet)} kg. </h4>`;
