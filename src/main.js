@@ -47,21 +47,14 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
 //funcion filtrar
 let cont3 = document.getElementById("btn-filter");
 cont3.addEventListener("change", () => {
-  let filterData = filter(
-    valuesObjet,
-    document.getElementById("btn-filter").value
-  );
-  showData(filterData);
+  showData(filter(valuesObjet, document.getElementById("btn-filter").value));
 });
 
 const idBtnOrder = document.getElementById("btn-order");
 idBtnOrder.addEventListener("change", () => {
-  let orderDataPoke = sortData(
-    valuesObjet,
-    "name",
-    document.getElementById("btn-order").value
+  showData(
+    sortData(valuesObjet, "name", document.getElementById("btn-order").value)
   );
-  showData(orderDataPoke);
 });
 
 //Imprimiendo stata en secttion stata de html

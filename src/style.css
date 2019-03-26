@@ -30,6 +30,7 @@ body {
   top: calc(50% - 589px / 2 + 109.5px);
 
   /* Green 3 */
+  
   border: 3px solid #6fcf97;
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.616);
@@ -54,14 +55,14 @@ body {
   background: #81c7276b;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 10fr));
-  grid-gap: 1%;
+  grid-gap: 3%;
   border-radius: 15px;
   padding: 5%;
 }
 .grid > * {
   padding: 2%;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.733);
+  background-color: rgba(18, 22, 57, 0.7);
   border-radius: 15px;
 }
 aside {
