@@ -1,4 +1,4 @@
-const sortData = (data,sortBy,sortOrder) => {
+const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name" && sortOrder === "a-z") {
     data.sort((a, b) => (a.name > b.name ? 1 : -1));
   } else if (sortBy === "name" && sortOrder === "z-a") {
@@ -16,6 +16,4 @@ const filter = (arrDat, condition) => {
 };
 window.filter = filter;
 
-computeStats(data){
-    
-}
+computeStats = data => {};
