@@ -45,22 +45,28 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
            `;
 }
 //funcion filtrar
-let cont3 = document.getElementById("btn-filter");
+let cont3 = document.getElementById("filter");
 cont3.addEventListener("change", () => {
-  showData(filter(valuesObjet, document.getElementById("btn-filter").value));
+  let fil = filter(document.getElementById("filter").value);
+
+  document.getElementById("content1").style.display = "none";
+
+  document.getElementById("content3").innerHTML = `${fil
+    .map(viewPoke)
+    .join(" ")}`;
+  console.log(document.getElementById("filter").value);
 });
 
-const idBtnOrder = document.getElementById("btn-order");
-idBtnOrder.addEventListener("change", () => {
-  showData(
-    sortData(valuesObjet, "name", document.getElementById("btn-order").value)
-  );
+const idBtn = document.getElementById("id-btn");
+let namesPoke = sortData(valuesObjet, "name", "a-z");
+
+idBtn.addEventListener("click", e => {
+  // document.getElementById('content1').style.display= 'none';
+
+  if (e.target.id === "btn-name") {
+    // document.getElementById("content2").innerHTML = `${namesPoke
+    //   .map(viewPoke)
+    //   .join(" ")}`;
+    showData(namesPoke);
+  }
 });
-
-//Imprimiendo stata en secttion stata de html
-// document.getElementById("stata").innerHTML = "";
-document.getElementById("stata").innerHTML += `
-
-
-<h4> ¿Sabias que el peso promedio de estos Pokémones es 
-${computeStats(valuesObjet)} kg. </h4>`;
