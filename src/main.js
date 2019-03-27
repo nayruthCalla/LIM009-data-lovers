@@ -23,12 +23,15 @@ var arrTiposUnicos = [];
 
 /* Tipo */
 for (let i = 0; i < valuesObjet.length; i++) {
-  // console.log(arrData[i].hasOwnProperty('type'))
+  // console.log(valuesObjet[i].hasOwnProperty('type'));
   if (valuesObjet[i].hasOwnProperty("type")) {
     arrTipos.push(valuesObjet[i].type);
+
   }
 }
+
 for (let i = 0; i < arrTipos.length; i++) {
+  console.log(arrTipos.length);
   // console.log(arrTiposUnicos[i])
   for (let j = 0; j < arrTipos[i].length; j++) {
     // console.log(arrTiposUnicos.push(arrTipos[i][j]));
