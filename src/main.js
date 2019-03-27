@@ -1,6 +1,6 @@
 /* Manejo del DOM */
 
-window.POKEMON.pokemon;
+
 const valuesObjet = POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
 let valuesData = "";
 const showData = view => {

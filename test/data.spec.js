@@ -24,32 +24,7 @@ describe('window.computeStats', () => {
   it('debería retornar un promedio de los numéros que están dentro de strings ', () => {
     assert.equal(computeStats(arrTest), '65');
   });
-<<<<<<< HEAD
   // it('debería retornar "example"', () => {
   //   assert.equal(example(), 'example');
   // });
 });
-=======
-})
-//Test de definiciones
-
-
-describe('example', () => {
-
-  
-it('debería ser una objeto', () => {
-  assert.equal(typeof POKEMON, 'object');
-});
-  
-  it('debería ser una función', () => {
-    assert.equal(typeof filterData, 'function');
-  });
-  it('debería ser una función', () => {
-    assert.equal(typeof sortData, 'function');
-  });
-  it('debería ser una función', () => {
-    assert.equal(typeof computeStats, 'function');
-  });
-  
-})
->>>>>>> d6b059253cba60fa4341ac3990e446ca129d145a
