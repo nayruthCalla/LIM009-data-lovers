@@ -2,6 +2,7 @@
 
 
 const valuesObjet = POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
+//valuesObjet es un array de objetos
 let valuesData = "";
 const showData = view => {
   document.getElementById("cont-data").innerHTML = "";
@@ -66,3 +67,4 @@ idBtnOrder.addEventListener("change", () => {
 document.getElementById("stata").innerHTML += `
 <h4> ¿Sabias que el peso promedio de estos Pokémones es 
 ${computeStats(valuesObjet)} kg. </h4>`;
+console.log(valuesObjet);
