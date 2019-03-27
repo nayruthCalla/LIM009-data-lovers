@@ -14,3 +14,24 @@ describe('example', () => {
     assert.equal(example(), 'example');
   });
 })
+//Test de definiciones
+
+
+describe('example', () => {
+
+  
+it('debería ser una objeto', () => {
+  assert.equal(typeof POKEMON, 'object');
+});
+  
+  it('debería ser una función', () => {
+    assert.equal(typeof filterData, 'function');
+  });
+  it('debería ser una función', () => {
+    assert.equal(typeof sortData, 'function');
+  });
+  it('debería ser una función', () => {
+    assert.equal(typeof computeStats, 'function');
+  });
+  
+})
