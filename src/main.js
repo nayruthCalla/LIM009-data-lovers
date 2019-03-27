@@ -45,10 +45,10 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
            `;
 }
 //funcion filtrar
+
 let cont3 = document.getElementById("btn-filter");
 cont3.addEventListener("change", () => {
-  showData(
-    filterData(valuesObjet, document.getElementById("btn-filter").value)
+  showData(filterData(valuesObjet, document.getElementById("btn-filter").value)
   );
 });
 
