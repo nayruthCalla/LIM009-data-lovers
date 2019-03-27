@@ -8,6 +8,7 @@ const sortData = (data, sortBy, sortOrder) => {
 };
 window.sortData = sortData;
 
+
 const filterData = (data, condition) => {
   const filterType = data.filter(ele => ele.type[0] === condition || ele.type[1] === condition);
   return filterType;
