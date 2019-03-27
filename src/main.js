@@ -1,4 +1,6 @@
 /* Manejo del DOM */
+
+
 const valuesObjet = POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
 let valuesData = "";
 const showData = view => {
@@ -45,10 +47,10 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
            `;
 }
 //funcion filtrar
+
 let cont3 = document.getElementById("btn-filter");
 cont3.addEventListener("change", () => {
-  showData(
-    filterData(valuesObjet, document.getElementById("btn-filter").value)
+  showData(filterData(valuesObjet, document.getElementById("btn-filter").value)
   );
 });
 
@@ -62,7 +64,5 @@ idBtnOrder.addEventListener("change", () => {
 //Imprimiendo stata en secttion stata de html
 // document.getElementById("stata").innerHTML = "";
 document.getElementById("stata").innerHTML += `
-
-
 <h4> ¿Sabias que el peso promedio de estos Pokémones es 
 ${computeStats(valuesObjet)} kg. </h4>`;
