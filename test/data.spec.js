@@ -104,26 +104,10 @@ const array_Poke_computeStata=[{
 }]
 
 
-// COMPROBANDO QUE POKEMON ES OBJETO:
-
-// describe('POKEMON', ()=>{
-//   it('debería ser un objeto', ()=>{
-//     assert.equal(typeof POKEMON, 'object');
-// })})
-
-const computeStats = require('./computeStats')
-// const computeStats= require('./computeStats');
-// const arrtoTest=["45.6 kg", "65.7 kg","85 kg" ];
-describe('window.computeStats', () => {
-  
-  // it('debería ser una función', () => {
-  //   assert.equal(typeof computeStats(), 'function');
-  // });
-
-  it('debería retornar un promedio de los numéros que están dentro del array ', () => {
+require('../src/data')
+describe('.computeStats', () => {
+    it('debería retornar un promedio de los numéros que están dentro del array ', () => {
     expect(computeStats(array_Poke_computeStata).toBe(65));
   });
-  // it('debería retornar "example"', () => {
-  //   assert.equal(example(), 'example');
-  // });
+  
 });

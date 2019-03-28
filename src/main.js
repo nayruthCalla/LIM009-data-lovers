@@ -1,7 +1,7 @@
 /* Manejo del DOM */
 
 
-const valuesObjet = POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
+const valuesObjet = window.POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
 //valuesObjet es un array de objetos
 let valuesData = "";
 const showData = view => {
@@ -51,14 +51,14 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
 
 let cont3 = document.getElementById("btn-filter");
 cont3.addEventListener("change", () => {
-  showData(filterData(valuesObjet, document.getElementById("btn-filter").value)
+  showData(window.filterData(valuesObjet, document.getElementById("btn-filter").value)
   );
 });
 
 const idBtnOrder = document.getElementById("btn-order");
 idBtnOrder.addEventListener("change", () => {
   showData(
-    sortData(valuesObjet, "name", document.getElementById("btn-order").value)
+    window.sortData(valuesObjet, "name", document.getElementById("btn-order").value)
   );
 });
 
@@ -66,6 +66,6 @@ idBtnOrder.addEventListener("change", () => {
 // document.getElementById("stata").innerHTML = "";
 document.getElementById("stata").innerHTML += `
 <h4> ¿Sabias que el peso promedio de estos Pokémones es 
-${computeStats(valuesObjet)} kg. </h4>`;
+${window.computeStats(valuesObjet)} kg. </h4>`;
 
 
