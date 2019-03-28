@@ -6,13 +6,14 @@ const sortData = (data, sortBy, sortOrder) => {
   }
   return data;
 };
-window.sortData = sortData;
+ 
 
 
 const filterData = (data, condition) => {
   const filterType = data.filter(ele => ele.type[0] === condition || ele.type[1] === condition);
   return filterType;
 };
+
 /////FUNCTION STATA PESO PROMEDIO
 const computeStats = data => {
   let data_w = data.map(el => el.weight);
@@ -23,3 +24,7 @@ const computeStats = data => {
   }
   return parseInt(newi / data.length);
 };
+
+window.sortData = sortData;
+window.filterData = filterData;
+window.computeStats = computeStats;
