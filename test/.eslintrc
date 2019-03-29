@@ -5,6 +5,7 @@
   },
   "globals": {
     "assert": false,
+<<<<<<< HEAD
     "expect": false,
     "toBe":false,
     "describe": false,
@@ -12,3 +13,8 @@
    
      
 }}
+=======
+    "expect":false
+  }
+}
+>>>>>>> 04cb8eb136aaec480babde64f984c651fa9b98aa
