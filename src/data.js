@@ -6,11 +6,11 @@ const sortData = (data, sortBy, sortOrder) => {
   }
   return data;
 };
- 
-
 
 const filterData = (data, condition) => {
-  const filterType = data.filter(ele => ele.type[0] === condition || ele.type[1] === condition);
+  const filterType = data.filter(
+    ele => ele.type[0] === condition || ele.type[1] === condition
+  );
   return filterType;
 };
 
