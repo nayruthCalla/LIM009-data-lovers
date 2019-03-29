@@ -4,126 +4,135 @@ require('chai').assert;
 require('../src/data.js');
 require('./data.spec.js');
 require('../data/pokemon.pokemon.js');
-// data para computeStats=
-const array_Poke_computeStata=[{
-  "id": 1,
-  "num": "001",
-  "name": "Bulbasaur",
-  "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
-  "type": [
-    "Grass",
-    "Poison"
-  ],
-  "height": "0.71 m",
-  "weight": "6.9 kg",
-  "candy": "Bulbasaur Candy",
-  "candy_count": 25,
-  "egg": "2 km",
-  "spawn_chance": 0.69,
-  "avg_spawns": 69,
-  "spawn_time": "20:00",
-  "multipliers": [1.58],
-  "weaknesses": [
-    "Fire",
-    "Ice",
-    "Flying",
-    "Psychic"
-  ],
-  "next_evolution": [{
-    "num": "002",
-    "name": "Ivysaur"
-  }, {
-    "num": "003",
-    "name": "Venusaur"
-  }]
-}, {
-  "id": 2,
-  "num": "002",
-  "name": "Ivysaur",
-  "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
-  "type": [
-    "Grass",
-    "Poison"
-  ],
-  "height": "0.99 m",
-  "weight": "13.0 kg",
-  "candy": "Bulbasaur Candy",
-  "candy_count": 100,
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.042,
-  "avg_spawns": 4.2,
-  "spawn_time": "07:00",
-  "multipliers": [
-    1.2,
-    1.6
-  ],
-  "weaknesses": [
-    "Fire",
-    "Ice",
-    "Flying",
-    "Psychic"
-  ],
-  "prev_evolution": [{
+require('../src/data.js/computeStats');
+
+
+//DATA
+const pokesToFilter =[
+  {
+    "id": 1,
     "num": "001",
-    "name": "Bulbasaur"
-  }],
-  "next_evolution": [{
-    "num": "003",
-    "name": "Venusaur"
-  }]
-}, {
-  "id": 3,
-  "num": "003",
-  "name": "Venusaur",
-  "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
-  "type": [
-    "Grass",
-    "Poison"
-  ],
-  "height": "2.01 m",
-  "weight": "100.0 kg",
-  "candy": "Bulbasaur Candy",
-  "egg": "Not in Eggs",
-  "spawn_chance": 0.017,
-  "avg_spawns": 1.7,
-  "spawn_time": "11:30",
-  "multipliers": null,
-  "weaknesses": [
-    "Fire",
-    "Ice",
-    "Flying",
-    "Psychic"
-  ],
-  "prev_evolution": [{
-    "num": "001",
-    "name": "Bulbasaur"
+    "name": "Bulbasaur",
+    "img": "http://www.serebii.net/pokemongo/pokemon/001.png",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "height": "0.71 m",
+    "weight": "6.9 kg",
+    "candy": "Bulbasaur Candy",
+    "candy_count": 25,
+    "egg": "2 km",
+    "spawn_chance": 0.69,
+    "avg_spawns": 69,
+    "spawn_time": "20:00",
+    "multipliers": [1.58],
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "next_evolution": [{
+      "num": "002",
+      "name": "Ivysaur"
+    }, {
+      "num": "003",
+      "name": "Venusaur"
+    }]
   }, {
+    "id": 2,
     "num": "002",
-    "name": "Ivysaur"
-  }]
-}]
+    "name": "Ivysaur",
+    "img": "http://www.serebii.net/pokemongo/pokemon/002.png",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "height": "0.99 m",
+    "weight": "13.0 kg",
+    "candy": "Bulbasaur Candy",
+    "candy_count": 100,
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.042,
+    "avg_spawns": 4.2,
+    "spawn_time": "07:00",
+    "multipliers": [
+      1.2,
+      1.6
+    ],
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [{
+      "num": "001",
+      "name": "Bulbasaur"
+    }],
+    "next_evolution": [{
+      "num": "003",
+      "name": "Venusaur"
+    }]
+  }, {
+    "id": 3,
+    "num": "003",
+    "name": "Venusaur",
+    "img": "http://www.serebii.net/pokemongo/pokemon/003.png",
+    "type": [
+      "Grass",
+      "Poison"
+    ],
+    "height": "2.01 m",
+    "weight": "100.0 kg",
+    "candy": "Bulbasaur Candy",
+    "egg": "Not in Eggs",
+    "spawn_chance": 0.017,
+    "avg_spawns": 1.7,
+    "spawn_time": "11:30",
+    "multipliers": null,
+    "weaknesses": [
+      "Fire",
+      "Ice",
+      "Flying",
+      "Psychic"
+    ],
+    "prev_evolution": [{
+      "num": "001",
+      "name": "Bulbasaur"
+    }, {
+      "num": "002",
+      "name": "Ivysaur"
+    }]
+  }
 
+]
 
-// COMPROBANDO QUE POKEMON ES OBJETO:
-
-// describe('POKEMON', ()=>{
-//   it('debería ser un objeto', ()=>{
-//     assert.equal(typeof POKEMON, 'object');
-// })})
-
-const computeStats = require('./computeStats')
-// const computeStats= require('./computeStats');
-// const arrtoTest=["45.6 kg", "65.7 kg","85 kg" ];
-describe('window.computeStats', () => {
-  
-  // it('debería ser una función', () => {
-  //   assert.equal(typeof computeStats(), 'function');
-  // });
-
-  it('debería retornar un promedio de los numéros que están dentro del array ', () => {
-    expect(computeStats(array_Poke_computeStata).toBe(65));
-  });
-  // it('debería retornar "example"', () => {
-  //   assert.equal(example(), 'example');
-  // });
+describe('POKEMON', () => {
+  it('POKEMON deberia ser un objeto', () => {
+  expect(typeof window.POKEMON).toBe('object');
 });
+});
+describe('computeStats', () => {
+    it('ComputeStats deberia ser una función', () => {
+    expect(typeof window.computeStats).toBe('function');
+
+  });
+  it("ComputeStats",()=>{
+    expect(window.computeStats())
+  })
+
+describe('filter', ()=>{
+  it("Filter debería ser una función", ()=>{
+    expect(typeof window.filterData(pokesToFilter).toBe('function'));
+  })
+})
+describe('sortData', ()=>{
+  it("sortData debería ser una función", ()=>{
+    expect(typeof window.filterData(pokesToFilter).toBe('number'));
+  })
+})
+});
+
+
