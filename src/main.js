@@ -1,8 +1,8 @@
 /* Manejo del DOM */
 
 
-const valuesObjet = window.POKEMON.pokemon; //obeteniendo data en un array de todo el objeto POKEMON
-//valuesObjet es un array de objetos
+const valuesObjet = window.POKEMON.pokemon; 
+
 let valuesData = "";
 const showData = view => {
   document.getElementById("cont-data").innerHTML = "";
