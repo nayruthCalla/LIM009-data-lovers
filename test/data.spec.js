@@ -380,15 +380,5 @@ describe("Probando funciones en data.js", () => {
     expect(GlobalPoke.computeStats(dataPoke)).toEqual(45);
   });
 });
-describe('filter', ()=>{
-  it("Filter debería ser una función", ()=>{
-    expect(typeof functionsPokemon.filterData).toBe('function');
-  })
-})
- describe('sortData', ()=>{
-  it("sortData debería ser una función", ()=>{
-    expect(typeof functionsPokemon.sortData).toBe('number');
-  })
-})
 
 
