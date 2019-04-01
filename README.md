@@ -28,21 +28,16 @@ Interfaz que brinda información puntual y digerida para *beginners* que no tien
 ***
 ## Definición del user persona
 ### ¿Quiénes son los principales usuarios de producto?
-
-<p align="center">
-  <img src="https://i.ibb.co/gzJ6qjX/User-persona.png">
-</p>
-
 ### ¿Cuáles son los objetivos de estos usuarios en relación con el producto?
 
-Desean contar con una interfaz que les permita entender de forma sencilla, agradable e intuitiva cómo funciona el juego.
+Desean reconocer a los po´kemones con ver su imagen 
 
 ### ¿Cuáles son los datos más relevantes que quieren ver en la interfaz y por qué?
 
-Al ser un juego de estrategia y en colaboración con demás jugadores, les interesaría conocer con cuál campeón empezar a jugar, sus roles y descubrir los campeones por rol con sus atributos específicos. 
+Los datos son debilidades, nombres, imagen.
 
 ### ¿Cuándo utilizan o utilizarían el producto?
-En sus tiempos libres. Normalmente emplean en promedio 3 horas jugando y les agrada jugar en grupo porque los motiva interactuar para aprender más rápido.
+En el momento que esten jugando y saber si capturar a un pokémon 
 
 ## Historias de usuario
 
@@ -98,9 +93,6 @@ Al momento de mostrar el diseño realizado el usuario intereactua facilmente con
 
 * Construimos el prototipo utilizando la acción overlays para tener una manera distinta de navegación.
 
-<p align="center">
-<a href="http://picasion.com/"><img src="http://i.picasion.com/pic88/5d91ea73c7dfce84513d54f7d789b796.gif" width="300" height="378" border="0" alt="http://picasion.com/" /></a><br />
-</p>
 
 * Sobre el tipo de letra, tratamos que sea lo más cercano al usado en el site del juego.
 
