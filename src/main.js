@@ -1,7 +1,7 @@
 /* Manejo del DOM */
 
 
-const valuesObjet = window.POKEMON.pokemon; 
+const valuesObjet = POKEMON.pokemon; 
 
 let valuesData = "";
 const showData = view => {
