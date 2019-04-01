@@ -1,15 +1,16 @@
 const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name" && sortOrder === "a-z") {
-    data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    data.sort((a, b) => (a.name > b.name ? 0 : -1));
   } else if (sortBy === "name" && sortOrder === "z-a") {
-    data.sort((a, b) => (a.name < b.name ? 1 : -1));
+    data.sort((a, b) => (a.name < b.name ? 0 : -1));
   }
   return data;
 };
- 
 
 const filterData = (data, condition) => {
-  const filterType = data.filter(ele => ele.type[0] === condition || ele.type[1] === condition);
+  const filterType = data.filter(
+    ele => ele.type[0] === condition || ele.type[1] === condition
+  );
   return filterType;
 };
 
@@ -23,7 +24,11 @@ const computeStats = (data) => {
   }
   return parseInt(newi / data.length);
 };
-
-window.globalPoke = {sortData,
-filterData, computeStats
-}
+window.GlobalPoke = {
+  sortData,
+  filterData,
+  computeStats
+};
+// window.sortData = sortData;
+// window.filterData = filterData;
+// window.computeStats = computeStats;

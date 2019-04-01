@@ -1,8 +1,5 @@
-/* Manejo del DOM */
-
-
-const valuesObjet = POKEMON.pokemon; 
-
+Window.POKEMON;
+const valuesObjet = POKEMON.pokemon;
 let valuesData = "";
 const showData = view => {
   document.getElementById("cont-data").innerHTML = "";
@@ -26,18 +23,20 @@ var arrTiposUnicos = [];
 
 /* Tipo */
 for (let i = 0; i < valuesObjet.length; i++) {
-  // console.log(arrData[i].hasOwnProperty('type'))
+  // console.log(valuesObjet[i].hasOwnProperty('type'));
   if (valuesObjet[i].hasOwnProperty("type")) {
     arrTipos.push(valuesObjet[i].type);
   }
 }
+
 for (let i = 0; i < arrTipos.length; i++) {
+  // console.log(arrTipos.length);
   // console.log(arrTiposUnicos[i])
   for (let j = 0; j < arrTipos[i].length; j++) {
-    // console.log(arrTiposUnicos.push(arrTipos[i][j]));
+  
     if (arrTiposUnicos.indexOf(arrTipos[i][j]) === -1) {
       arrTiposUnicos.push(arrTipos[i][j]);
-      // arrTiposUnicos;
+  
     }
   }
 }
@@ -51,14 +50,22 @@ for (var i = 0; i < arrTiposUnicos.length; i++) {
 
 let cont3 = document.getElementById("btn-filter");
 cont3.addEventListener("change", () => {
-  showData(window.filterData(valuesObjet, document.getElementById("btn-filter").value)
+  showData(
+    GlobalPoke.filterData(
+      valuesObjet,
+      document.getElementById("btn-filter").value
+    )
   );
 });
 
 const idBtnOrder = document.getElementById("btn-order");
 idBtnOrder.addEventListener("change", () => {
   showData(
-    window.sortData(valuesObjet, "name", document.getElementById("btn-order").value)
+    GlobalPoke.sortData(
+      valuesObjet,
+      "name",
+      document.getElementById("btn-order").value
+    )
   );
 });
 
@@ -66,6 +73,4 @@ idBtnOrder.addEventListener("change", () => {
 // document.getElementById("stata").innerHTML = "";
 document.getElementById("stata").innerHTML += `
 <h4> ¿Sabias que el peso promedio de estos Pokémones es 
-${window.computeStats(valuesObjet)} kg. </h4>`;
-
-
+${GlobalPoke.computeStats(valuesObjet)} kg. </h4>`;

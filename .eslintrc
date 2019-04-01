@@ -12,7 +12,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "POKEMON":"false",
-    "example": false
+    "POKEMON": false,
+    "GlobalPoke": false
   }
 }
