@@ -24,6 +24,4 @@ const computeStats = (data) => {
   return parseInt(newi / data.length);
 };
 
-window.sortData = sortData;
-window.filterData = filterData;
-window.computeStats = computeStats;
+window.functionsPokemon= {sortData, filterData ,computeStats};
