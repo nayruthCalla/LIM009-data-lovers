@@ -1,21 +1,34 @@
-const sortData = (data,sortBy,sortOrder) => {
+const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name" && sortOrder === "a-z") {
-    data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    data.sort((a, b) => (a.name > b.name ? 0 : -1));
   } else if (sortBy === "name" && sortOrder === "z-a") {
-    data.sort((a, b) => (a.name < b.name ? 1 : -1));
+    data.sort((a, b) => (a.name < b.name ? 0 : -1));
   }
   return data;
 };
-window.sortData = sortData;
 
-const filter = (arrDat, condition) => {
-  const filterType = arrDat.filter(
+const filterData = (data, condition) => {
+  const filterType = data.filter(
     ele => ele.type[0] === condition || ele.type[1] === condition
   );
   return filterType;
 };
-window.filter = filter;
 
-computeStats(data){
-    
-}
+/////FUNCTION STATA PESO PROMEDIO
+const computeStats = data => {
+  let data_w = data.map(el => el.weight);
+  let newi = 0;
+  for (let i = 0; i < data_w.length; i++) {
+    let arr = parseFloat(data_w[i].split(" ", 1));
+    newi = newi + arr;
+  }
+  return parseInt(newi / data.length);
+};
+window.GlobalPoke = {
+  sortData,
+  filterData,
+  computeStats
+};
+// window.sortData = sortData;
+// window.filterData = filterData;
+// window.computeStats = computeStats;
