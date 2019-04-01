@@ -12,6 +12,7 @@ body {
   background-position: center;
   background-color: #1a1b1bf3;
   background-size: cover;
+
   border-image-width: 50%;
 }
 .color-font {
@@ -117,12 +118,16 @@ footer {
   color: black;
   background-color: white;
 }
+.style-title {
+  font-size: 15px;
+  color: rgba(177, 223, 52, 0.733);
+}
 
 /* media query*/
 
 @media screen and (max-width: 75em) {
   .header {
-    background-color: red;
+    /* background-color: red; */
   }
   .size-cont {
     width: 40rem;
@@ -133,7 +138,7 @@ footer {
 }
 @media screen and (max-width: 64em) {
   .header {
-    background-color: blue;
+    /* background-color: blue; */
   }
   .head {
     width: 50%;
@@ -154,11 +159,12 @@ footer {
   }
   .style-btn {
     font-size: 30px;
+    cursor: pointer;
   }
 }
 @media screen and (max-width: 37.5em) {
   .header {
-    background-color: green;
+    /* background-color: green; */
   }
   .size-cont {
     margin-top: 5%;
@@ -181,7 +187,7 @@ footer {
 
 @media screen and (max-width: 30em) {
   .header {
-    background-color: rgba(179, 114, 163);
+    /* background-color: rgba(179, 114, 163); */
   }
   .head {
     width: 100%;
@@ -208,7 +214,7 @@ footer {
 
 @media screen and (max-width: 20em) {
   .header {
-    background-color: brown;
+    /* background-color: brown; */
   }
   .size-cont {
     margin-top: 3%;
@@ -227,14 +233,4 @@ footer {
     float: left;
     font-size: 10px;
   }
-  /* aside {
-    background: #6fcf7783;
-    box-shadow: 0px 4px 4px rgba(202, 235, 17, 0.473);
-    width: 25%;
-    float: right;
-    
-    margin-right: 3%;
-    padding: 0.5rem;
-    padding-left: 0.5rem;
-  } */
 }
