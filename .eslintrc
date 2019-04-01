@@ -12,13 +12,7 @@
   },
   "extends": "eslint:recommended",
   "globals": {
-    "example": false,
-    "computeStats": false,
-    "filterData": false,
-    "sortData": false,
     "POKEMON": false,
-    "functionsPokemon": false
- 
-
+    "GlobalPoke": false
   }
 }
