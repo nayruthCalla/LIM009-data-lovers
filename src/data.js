@@ -1,8 +1,8 @@
 const sortData = (data, sortBy, sortOrder) => {
   if (sortBy === "name" && sortOrder === "a-z") {
-    data.sort((a, b) => (a.name > b.name ? 1 : -1));
+    data.sort((a, b) => (a.name > b.name ? 0 : -1));
   } else if (sortBy === "name" && sortOrder === "z-a") {
-    data.sort((a, b) => (a.name < b.name ? 1 : -1));
+    data.sort((a, b) => (a.name < b.name ? 0 : -1));
   }
   return data;
 };
@@ -24,7 +24,11 @@ const computeStats = data => {
   }
   return parseInt(newi / data.length);
 };
-
-window.sortData = sortData;
-window.filterData = filterData;
-window.computeStats = computeStats;
+window.GlobalPoke = {
+  sortData,
+  filterData,
+  computeStats
+};
+// window.sortData = sortData;
+// window.filterData = filterData;
+// window.computeStats = computeStats;
