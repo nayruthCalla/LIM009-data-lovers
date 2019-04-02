@@ -14,34 +14,36 @@
     <main class="main-cont ">
       <section class="size-cont space-left">
         <article id="cont-data" class="grid size-cont scroll space-left ">
-          <h6 class="style-title">Pokemones:</h6>
-        </article>
+                  </article>
       </section>
       <aside class="aside">
         <form action="button-menu" id="menu-button">
-          <h2>¿Cuantos tipos de Pokemones hay?</h2>
+            <h2 for="">Ordénalos alfabéticamente:</h2>
+            <select
+              name="order"
+              id="btn-order"
+              class=" 
+            style-btn"
+            >
+              <option value="ordenar" selected>Ordenar</option>
+              <option value="a-z">a-z</option>
+              <option value="z-a">z-a</option>
+            </select>
+          <h2>Conoce los tipos de pokemones que existen</h2>
           <select name="filter" id="btn-filter" class="style-btn">
-            <option value="">TIPOS</option>
+            <option value="">Tipos</option>
           </select>
-          <h2>Ordenalos alfabéticamente:</h2>
-          <select
-            name="order"
-            id="btn-order"
-            class="
-          style-btn"
-          >
-            <option value="ordenar" selected>ORDENAR</option>
-            <option value="a-z">a-z</option>
-            <option value="z-a">z-a</option>
-          </select>
+          
 
           <section class="style-btn" id="stata">
-            <h2>Datos curiosos:</h2>
+            <h2 for="">Dato curioso:</h2>
             <br />
           </section>
+          <section id="test"></section>
         </form>
       </aside>
     </main>
+
 
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>

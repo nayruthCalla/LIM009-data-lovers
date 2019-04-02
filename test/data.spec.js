@@ -5,15 +5,20 @@ require("./data.spec.js");
 
 test("GlobalPoke deberia ser un objeto", () => {
   expect(typeof GlobalPoke).toBe("object");
+
 });
 test("sortData deberia ser una funcion", () => {
   expect(typeof GlobalPoke.sortData).toBe("function");
+
 });
 test("filterData deberia ser una funcion", () => {
   expect(typeof GlobalPoke.filterData).toBe("function");
+  
 });
+
 test("computeStats deberia ser una funcion", () => {
   expect(typeof GlobalPoke.computeStats).toBe("function");
+
 });
 
 describe("Probando funciones en data.js", () => {
@@ -380,3 +385,5 @@ describe("Probando funciones en data.js", () => {
     expect(GlobalPoke.computeStats(dataPoke)).toEqual(45);
   });
 });
+
+

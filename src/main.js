@@ -1,3 +1,4 @@
+Window.POKEMON;
 const valuesObjet = POKEMON.pokemon;
 let valuesData = "";
 const showData = view => {
@@ -32,10 +33,10 @@ for (let i = 0; i < arrTipos.length; i++) {
   // console.log(arrTipos.length);
   // console.log(arrTiposUnicos[i])
   for (let j = 0; j < arrTipos[i].length; j++) {
-    // console.log(arrTiposUnicos.push(arrTipos[i][j]));
+  
     if (arrTiposUnicos.indexOf(arrTipos[i][j]) === -1) {
       arrTiposUnicos.push(arrTipos[i][j]);
-      // arrTiposUnicos;
+  
     }
   }
 }
