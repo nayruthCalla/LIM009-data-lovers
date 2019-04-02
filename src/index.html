@@ -1,34 +1,29 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Data Lovers</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <link rel="stylesheet" href="style.css" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Montserrat"
-      rel="stylesheet"
-    />
   </head>
 
   <body>
-    <header>
-      <img src="image/tittlepokepedia.png" alt="" class="head" width="15%" />
+    <header class="header">
+      <img src="image/tittlepokepedia.png" class="head" />
     </header>
     <main class="main-cont ">
       <section class="size-cont space-left">
-        <article
-          id="cont-data"
-          class="grid size-cont scroll space-left "
-        ></article>
+        <article id="cont-data" class="grid size-cont scroll space-left ">
+          <h6 class="style-title">Pokemones:</h6>
+        </article>
       </section>
-
       <aside class="aside">
-        <form action="" id="menu-button">
-          <h2 for="">¿Cuantos tipos de Pokemones hay?</h2>
+        <form action="button-menu" id="menu-button">
+          <h2>¿Cuantos tipos de Pokemones hay?</h2>
           <select name="filter" id="btn-filter" class="style-btn">
             <option value="">TIPOS</option>
           </select>
-          <h2 for="">Ordenalos alfabéticamente:</h2>
+          <h2>Ordenalos alfabéticamente:</h2>
           <select
             name="order"
             id="btn-order"
@@ -40,71 +35,14 @@
             <option value="z-a">z-a</option>
           </select>
 
-          <section class="stata-style" id="stata">
-            <h2 for="">Datos curiosos...</h2>
+          <section class="style-btn" id="stata">
+            <h2>Datos curiosos:</h2>
             <br />
           </section>
         </form>
       </aside>
     </main>
-    <footer>
-      <h5></h5>
-    </footer>
 
-    <!-- <header class="header_poke">
-    <nav class="nav_list">
-      <ul class="ulist">
-        <li class="li-item"><a href="">HOME</a></li>
-        <li class="li-item"><a href="">POKEMONES</a></li>
-        <li class="li-item"><a href="">TIPO POKEMON</a></li>
-        </ul>
-    </nav>
-
-    <div class="slider">
-      <ul>
-        <li>
-          <img src="image/slide-main1.jpg" alt="">
-        </li>
-        <li>
-          <img src="image/slide-a.jpg" alt="">
-        </li>
-        <li>
-          <img src="image/slide-c.jpg" alt="">
-        </li>
-        <li>
-          <img src="image/slide-b.jpg" alt="">
-        </li>
-
-      </ul>
-
-
-    </div>
-    <nav class="menu">
-      <ul class="sub-menu">
-        <li class="sub-menu"><a href="">FILTRA</a></li>
-        <li class="sub-menu">
-           <select id="selectOrder">
-            <option value="a-z" selected>a-z</option>
-            <option value="z-a">z-a</option>
-          </select></li> -->
-    <!-- <button id="btn-order">ordenar</button>
-        <li class="sub-menu"><a href="">ESTADISTICA</a></li>
-      </ul>
-    </nav>
-
-  </header>
-  <main>
-    <section id="cont-data"></section>
-    <section>
-      <h1>Estos son los nombres del pokemon</h1>
-
-      <section id="cont-order"></section>
-    </section>
-
-    <div class="bodypage">
-      <main id="cont-main">
-
-      </main> -->
     <!-- <script src="./data/injuries/injuries.js"></script> -->
     <script src="./data/pokemon/pokemon.js"></script>
     <!-- <script src="./data/steam/steam.js"></script> -->
