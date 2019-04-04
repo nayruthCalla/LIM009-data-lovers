@@ -33,10 +33,8 @@ for (let i = 0; i < arrTipos.length; i++) {
   // console.log(arrTipos.length);
   // console.log(arrTiposUnicos[i])
   for (let j = 0; j < arrTipos[i].length; j++) {
-  
     if (arrTiposUnicos.indexOf(arrTipos[i][j]) === -1) {
       arrTiposUnicos.push(arrTipos[i][j]);
-  
     }
   }
 }
@@ -74,3 +72,29 @@ idBtnOrder.addEventListener("change", () => {
 document.getElementById("stata").innerHTML += `
 <h4> ¿Sabias que el peso promedio de estos Pokémones es 
 ${GlobalPoke.computeStats(valuesObjet)} kg. </h4>`;
+
+// google.load("visualization", "1.0", { packages: ["corechart"] });
+google.charts.load("current", { packages: ["corechart"] });
+let drawChart = () => {
+  let data = new google.visualization.DataTable();
+  data.addColumn("string", "nombrePoke");
+  data.addColumn("number", "kg");
+  data.addRows([
+    ["Peso Pokemonesther", 0],
+    ["Peso Pokemonesther", GlobalPoke.computeStats(valuesObjet)]
+  ]);
+  let option = {
+    title: "Peso promedio de los Pokémones",
+    legend: { position: "none" },
+    width: "50%",
+    heigth: "10%",
+    borderRadius: "15px",
+    titleTextStyle: { color: "#871b47", fontSize: 18 }
+  };
+  let chart = new google.visualization.AreaChart(
+    document.getElementById("draw-estata")
+  );
+  chart.draw(data, option);
+};
+
+google.charts.setOnLoadCallback(drawChart);

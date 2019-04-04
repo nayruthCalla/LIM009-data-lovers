@@ -17,7 +17,7 @@ body {
   background-size: cover;
 
   border-image-width: 50%;
-  font-size:16px;
+  font-size: 16px;
 }
 .color-font {
   background-color: rgba(255, 255, 255, 0.685);
@@ -103,7 +103,6 @@ article {
 footer {
   overflow: hidden;
   height: 10px;
- 
 }
 .col-xs-12 {
   width: 100%;
@@ -127,6 +126,10 @@ footer {
   font-size: 15px;
   color: rgba(177, 223, 52, 0.733);
 }
+.style-draw {
+  border-radius: 15px;
+  background: #1a1b1bf3;
+}
 
 /* media query*/
 
@@ -138,7 +141,6 @@ footer {
     width: 50%;
   }
   .size-cont {
-    
     width: 40rem;
     height: 32rem;
     overflow-block: hidden;
@@ -146,20 +148,18 @@ footer {
   }
   aside {
     margin-top: 1%;
-     font-size: 13px; 
+    font-size: 13px;
     width: 15rem;
     height: 32rem;
-    
+
     border-radius: 15px;
     float: auto;
     padding: 0.5rem;
-   
   }
   .style-btn {
-     font-size: 13px;
+    font-size: 13px;
     width: 80%;
     height: 3%;
-    
   }
 }
 @media screen and (max-width: 60rem) {
@@ -179,25 +179,23 @@ footer {
   }
   aside {
     margin-top: 5%;
-     font-size: 13px; 
+    font-size: 13px;
     width: 15rem;
     height: 27rem;
     border-radius: 15px;
     float: auto;
     padding: 0.5rem;
-   
   }
   .style-btn {
-     font-size: 13px;
+    font-size: 13px;
     width: 80%;
     height: 3%;
-    
   }
 }
 @media screen and (max-width: 42em) {
   .header {
     /* background-color: green; */
-     width: 100%;
+    width: 100%;
     height: auto;
   }
   .head {
@@ -212,7 +210,7 @@ footer {
   aside {
     padding-left: 0.5rem;
     margin-top: 10%;
-     font-size: 13px; 
+    font-size: 13px;
     border-radius: 15px;
     width: 10rem;
     height: 31rem;
@@ -233,21 +231,21 @@ footer {
   .size-cont {
     margin-top: 5%;
     width: 13rem;
-     height: 31rem; 
+    height: 31rem;
     overflow-block: hidden;
     padding: 0.5rem;
   }
   aside {
     padding: 0.5rem;
     margin-top: 5%;
-     font-size: 10px; 
+    font-size: 10px;
     width: 8rem;
     border-radius: 15px;
     height: 31rem;
   }
   .style-btn {
     width: 80%;
-     font-size: 10px;
+    font-size: 10px;
     float: center;
   }
 }
