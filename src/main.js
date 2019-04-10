@@ -1,4 +1,3 @@
-Window.POKEMON;
 const valuesObjet = POKEMON.pokemon;
 let valuesData = "";
 const showData = view => {
@@ -17,21 +16,17 @@ const showData = view => {
   });
 };
 showData(valuesObjet);
-//filtrar
-var arrTipos = [];
-var arrTiposUnicos = [];
-
+//filtrar tiposvar arrTipos = [];
+let arrTipos = [];
+let arrTiposUnicos = [];
 /* Tipo */
 for (let i = 0; i < valuesObjet.length; i++) {
-  // console.log(valuesObjet[i].hasOwnProperty('type'));
   if (valuesObjet[i].hasOwnProperty("type")) {
     arrTipos.push(valuesObjet[i].type);
   }
 }
 
 for (let i = 0; i < arrTipos.length; i++) {
-  // console.log(arrTipos.length);
-  // console.log(arrTiposUnicos[i])
   for (let j = 0; j < arrTipos[i].length; j++) {
     if (arrTiposUnicos.indexOf(arrTipos[i][j]) === -1) {
       arrTiposUnicos.push(arrTipos[i][j]);
@@ -39,15 +34,15 @@ for (let i = 0; i < arrTipos.length; i++) {
   }
 }
 
-for (var i = 0; i < arrTiposUnicos.length; i++) {
+for (let i = 0; i < arrTiposUnicos.length; i++) {
   document.getElementById("btn-filter").innerHTML += `	
            <option>${arrTiposUnicos[i]}</option>
            `;
 }
 //funcion filtrar
 
-let cont3 = document.getElementById("btn-filter");
-cont3.addEventListener("change", () => {
+let lisType = document.getElementById("btn-filter");
+lisType.addEventListener("change", () => {
   showData(
     GlobalPoke.filterData(
       valuesObjet,
